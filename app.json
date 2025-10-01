@@ -2,6 +2,23 @@
   "expo": {
     "name": "back-app",
     "slug": "back-app",
-    "version": "1.0.0"
+    "scheme": "back-app",
+    "version": "1.0.0",
+    "android": {
+      "package": "com.arthurrios.backapp",
+      "edgeToEdgeEnabled": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#3D44CD"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.arthurrios.backapp",
+      "icon": "./assets/ios-icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font"
+    ]
   }
 }

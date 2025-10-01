@@ -1,4 +1,4 @@
-package com.backapp
+package com.arthurrios.backapp
 
 import android.app.Application
 import android.content.res.Configuration

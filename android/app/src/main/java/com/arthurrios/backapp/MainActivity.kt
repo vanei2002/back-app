@@ -1,4 +1,4 @@
-package com.backapp
+package com.arthurrios.backapp
 
 import android.os.Build
 import android.os.Bundle
