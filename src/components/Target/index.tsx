@@ -1,4 +1,4 @@
-import { Text, TouchableOpacity, View } from "react-native";
+import { Text, TouchableOpacity, TouchableOpacityProps, View } from "react-native";
 import { styles } from "./styles";
 import { MaterialIcons } from '@expo/vector-icons';
 
@@ -10,14 +10,14 @@ export interface TargetProps {
   target: string;
 }
 
-type Props = {
+type Props = TouchableOpacityProps &  {
   data: TargetProps;
 }
 
-export const Target = ({ data }: Props) => {
+export const Target = ({ data , ...rest}: Props) => {
 
   return (
-    <TouchableOpacity style={styles.container} activeOpacity={0.7}>
+    <TouchableOpacity  style={styles.container} activeOpacity={0.7} {...rest}>
       <View style={styles.content}>
         <Text style={styles.name} numberOfLines={1}>{data.name}</Text>
       
