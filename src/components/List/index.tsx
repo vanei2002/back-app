@@ -6,7 +6,7 @@ import { colors } from "@/theme";
 
 interface Props<T> extends FlatListProps<T> {
   title: string;
-  emptyMessage: string;
+  emptyMessage?: string;
   containerStyle?: StyleProp<ViewStyle>;
 }
 

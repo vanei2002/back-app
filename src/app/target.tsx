@@ -1,6 +1,7 @@
-import { PageHeaders } from '@/components'
+import { Button, InputNumeric, PageHeaders } from '@/components'
+import { Input } from '@/components'
 import { router } from 'expo-router'
-import { Button, Text, View } from 'react-native'
+import { View } from 'react-native'
 
 export default function Target() {
   return (
@@ -9,7 +10,13 @@ export default function Target() {
         title="Detalhes da Meta" 
         subTitle="Acompanhe o progresso da sua meta" 
       />
-      <Button title="Voltar" onPress={() => router.back()} />
+
+      <View style={{marginTop: 32, gap: 24}}>
+        <Input label="Meta" placeholder="Ex: Economizar para viagem" />
+        <InputNumeric label="Valor" value={100.75}  />
+        <Button title="Salvar" onPress={() => router.back()} />
+      </View>
+
     </View>
   )
 }
