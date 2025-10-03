@@ -22,7 +22,7 @@ export const HomeHeader = ({input, output, ...data}: HomeHeaderProps) => {
       <View style={styles.summary}>
         <Summary data={input} icon={{ name: "arrow-upward", color: colors.green[500] }} />
 
-        <Summary isLeft data={output} icon={{ name: "arrow-downward", color: colors.red[400] }} />
+        <Summary isRight data={output} icon={{ name: "arrow-downward", color: colors.red[400] }} />
       </View>
 
       <Separator color={colors.blue[400]}/>

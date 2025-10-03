@@ -14,13 +14,13 @@ interface Props {
     name: keyof typeof MaterialIcons.glyphMap;
     color: ColorValue;
   },
-  isLeft?: boolean;
+  isRight?: boolean;
 }
 
-export const Summary = ({ data,icon, isLeft = false }: Props) => {
+export const Summary = ({ data,icon, isRight = false }: Props) => {
   return (
     <View style={styles.container}>
-      <View style={[styles.header, isLeft && {
+      <View style={[styles.header, isRight && {
         justifyContent: 'flex-end',
       }]}>
         <MaterialIcons name={icon.name} color={icon.color} size={16} />
